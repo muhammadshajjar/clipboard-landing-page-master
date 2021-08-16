@@ -115,6 +115,7 @@ Hero section
     padding: 6rem 0 5.25rem 0;
     background-image: url("./images/bg-header-mobile.png");
     background-repeat: no-repeat;
+    background-size: contain;
     text-align: center;
 }
 
@@ -242,9 +243,8 @@ Workflow section
     Footer
     ------------*/
 
-.footer {
+.footer__content {
     margin-top: 8.125rem;
-    background-color: #f6f6f6;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -297,12 +297,11 @@ by fill property
 }
 */
 
-@media screen and (min-width:376px) {
-    .header {
-        background-image: url("./images/bg-header-desktop.png");
-        background-repeat: no-repeat;
-    }
+.footer {
+    background-color: #f6f6f6;
 }
+
+@media screen and (min-width:376px) {}
 
 @media screen and (min-width:660px) {
     /*---------
@@ -328,6 +327,11 @@ by fill property
     /*-------------
         Hero section
         -------------*/
+    .header {
+        background-image: url("./images/bg-header-desktop.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
     .hero {
         max-width: 37.125rem;
     }
@@ -441,10 +445,10 @@ by fill property
     /*-----------
         Footer
         -------------*/
-    .footer {
+    .footer__content {
         flex-direction: row;
         justify-content: space-between;
-        padding: 2.375rem 10.2rem;
+        /* padding: 2.375rem 10.2rem;*/
         margin-bottom: 2.6rem;
     }
     .footer-logo__img {
