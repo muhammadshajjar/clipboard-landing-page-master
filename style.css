@@ -1,13 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,600;1,400&display=swap');
-
-/*@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300&display=swap');
-
-*/
-
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300&display=swap');
 *,
 *::after,
 *::before {
     box-sizing: border-box;
+}
+
+
+/*Class to hide visual impact this is for only screen readers*/
+
+.sr-only {
+    border: 0 !important;
+    clip: rect(1px, 1px, 1px, 1px) !important;
+    -webkit-clip-path: inset(50%) !important;
+    clip-path: inset(50%) !important;
+    height: 1px !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    position: absolute !important;
+    width: 1px !important;
+    white-space: nowrap !important;
 }
 
  :root {
@@ -321,6 +334,9 @@ by fill property
     .hero__title {
         font-size: 2.37rem;
     }
+    .hero__disc {
+        margin-top: 0.9rem;
+    }
     .btn {
         flex-direction: row;
     }
@@ -373,7 +389,7 @@ by fill property
         Hero section
         -------------*/
     .header {
-        padding: 7.875rem 0 6.875rem 0;
+        padding: 7.8rem 0 4.8rem 0;
     }
     .hero {
         max-width: 44.75rem;
@@ -388,10 +404,10 @@ by fill property
          Keep Track section
         --------------*/
     .keep-track {
-        margin-bottom: 9.6875rem;
+        margin-bottom: 9rem;
     }
     .keep-track--feautures {
-        margin-top: 5.062rem;
+        margin-top: 5rem;
         display: flex;
     }
     .features__list {
@@ -413,7 +429,7 @@ by fill property
         Acess clipboard section
         --------------*/
     .access-clipboard__img {
-        margin-top: 6.5625rem;
+        margin-top: 6rem;
         margin-bottom: 4.125rem;
     }
     /*--------------
@@ -429,6 +445,7 @@ by fill property
         flex-direction: row;
         justify-content: space-between;
         padding: 2.375rem 10.2rem;
+        margin-bottom: 2.6rem;
     }
     .footer-logo__img {
         margin-bottom: 0;
